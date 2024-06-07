@@ -108,7 +108,7 @@ if [ -n "$(docker ps -aq --filter name=acunetix 2>/dev/null)" ]; then
   msg_ok "The Container Acunetix Was Deleted Success!"
 fi
 
-port="3443"
+port="3444"
 if [ -n "$(docker ps -aq --filter publish=3443 2>/dev/null)" ]; then
   port="3445"
   msg_info "Acunetix Port 3443 Is Occupied, Will Use Port 3445"
